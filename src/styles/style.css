@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color:#516079;
+    --secondary-color: #2E3244;
+    --tertiary-color: #C5C6C6;
+    --quaternary-color: #F1895C;
+    --white: #FFFFFF;
+    --black: #000000;
+    --roboto: 'Roboto', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+}
+
+/* Global */
+
+body{
+    font-family: var(--roboto);
+    background: linear-gradient(to top right, var(--primary-color), var(--secondary-color));
+    height: 100%; 
+    margin: 0;
+}
+
+h2{
+    font-family: var(--montserrat);
+    color: var(--quaternary-color);
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+h3{
+    font-family: var(--montserrat);
+    color: var(--quaternary-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p{
+    color: var(--white);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+hr{
+    background-color: var(--tertiary-color);
+    width: 100%;
+    height: 1px;
+    border: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* Class */
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.link{
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--montserrat);
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.link:hover{
+    color: var(--quaternary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.h1{
+    font-size: 52px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    color: var(--quaternary-color);
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px!important;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 30px;
+}
+
+header ul li{
+    font-size: 20px;
+}
+
+
+/* Main */
+/* Section1 */
+
+.section1{
+    padding: 50px 0px;
+    width: 60%;
+}
+
+.section1 div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Section_Compétences */
+
+.section_skills h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section_skills{
+    padding: 50px 0px 120px 0px;
+}
+
+.div_skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 960px;
+    margin: auto;
+}
+
+.div_skills ul{
+    max-width: fit-content;
+    margin: auto;
+    text-align: left;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div_skills > div {
+    width: 100%;
+    text-align: center;
+}
+
+.border_skills{
+    border-right: 2px solid var(--quaternary-color);
+    border-left: 2px solid var(--quaternary-color);
+}
+
+.div_skills ul li{
+    color: var(--white);
+    font-size: 18px;
+}
+
+/* Section Projets */
+
+.section_projects{
+    padding: 50px 0;
+}
+
+.div_title_projects{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.section_projects img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.div_projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.div_projects article{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
+.div_articles_projects{
+    margin: 10px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.link_articles_projects{
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: var(--montserrat);
+    transition: all 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--white);
+    align-self: flex-end;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.link_articles_projects:hover{
+    color: var(--white);
+    background-color: var(--quaternary-color);
+    transition: all 0.3s;
+}
+
+/* Section Contact */
+
+.section_contact{
+    padding: 50px 0;
+}
+
+.section_contact h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-width: 500px;
+    margin: auto;
+    background-color: var(--secondary-color);
+    padding: 40px 20px;
+}
+
+form input, form textarea{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+}
+
+form label{
+    color: var(--white);
+    font-family: var(--roboto);
+    font-size: 18px;
+}
+
+form button{
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--montserrat);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+::placeholder{
+    font-family: var(--roboto);
+    font-size: 16px;
+}
+
+form button:hover{
+    background-color: var(--quaternary-color);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+/* Footer */
+
+footer{
+    background-color: var(--secondary-color);
+}
+
+footer div nav ul{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    align-content: center;
+}
+
+footer div nav ul li{
+    align-content: center;
+}
+

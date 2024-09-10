@@ -284,14 +284,7 @@ footer{
     background-color: var(--secondary-color);
 }
 
-footer div nav ul{
-    display: flex;
-    gap: 20px;
-    padding: 20px 0;
-    align-content: center;
+footer p{
+    text-align: center;
+    padding: 10px 0;
 }
-
-footer div nav ul li{
-    align-content: center;
-}
-

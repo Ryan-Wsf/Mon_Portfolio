@@ -3,6 +3,7 @@ import Footer from '../component/footer';
 import Header from '../component/header';
 import projects_data from '/data/projects_data.json'; 
 import '../styles/style.css';
+import Project from "../component/project";
 
 export default function Home() {
     return (
@@ -57,18 +58,9 @@ export default function Home() {
                             <Link className="link_articles_projects" to="#">Voir plus de projets</Link>
                         </div>
                         <div className="div_projects">
-                            {projects_data.slice(0, 3).map(project => ( 
-                            <article className="border_projects" key={project.id}>
-                                <img src={project.image} alt={project.title} />
-                                <div className="div_articles_projects">
-                                <h3>{project.title}</h3>
-                                <p>{project.description}</p>
-                                <Link className="link_articles_projects" to={project.link}>
-                                    En savoir plus
-                                </Link>
-                                </div>
-                            </article>
-                            ))}
+                            {projects_data.slice(0,3).map(project => (
+                            <Project project={project} key={project.id} />
+                        ))}
                         </div>
                     </section>
                     <hr className="hr"/>

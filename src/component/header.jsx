@@ -7,7 +7,7 @@ export default function Header() {
             <nav>
                 <ul>
                     <li><Link className="link" to="/">Accueil</Link></li>
-                    <li><Link className="link" to="/Projects_Pages.jsx">Projets</Link></li>
+                    <li><Link className="link" to="/Projects_Pages">Projets</Link></li>
                     <li><Link className="link" to="section_contact">Contact</Link></li>
                     <li><Link className="link" to="https://github.com/Ryan-Wsf?tab=repositories"><Github /></Link></li>
                     <li><Link className="link" to="https://www.linkedin.com/in/ryan-wassouf-2a18152b2/"><Linkedin /></Link></li>

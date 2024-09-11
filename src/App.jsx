@@ -7,7 +7,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Projects_Pages.jsx" element={<Projects_Pages />} />
+        <Route path="/Projects_Pages/:page?" element={<Projects_Pages />} />
       </Routes>
     </Router>
   );

@@ -74,6 +74,7 @@ ul{
     font-family: var(--montserrat);
     transition: all 0.3s ease-in-out;
     text-transform: uppercase;
+    padding: 7px;
 }
 
 .link:hover{
@@ -301,7 +302,6 @@ footer p{
 
 .div_page_change{
     display: flex;
-    gap: 10px;
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;

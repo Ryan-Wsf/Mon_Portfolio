@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, NavLink, useParams } from "react-router-dom";
 import Footer from '../component/footer';
 import Header from '../component/header';
 import projects_data from '/data/projects_data';
@@ -8,44 +8,50 @@ import { useEffect, useState } from "react";
 
 export default function Projects_Pages() {
     const { page } = useParams();
-    const [startProject, setStartProject] = useState(3);
     const projectPerPage = 9;
-    const [endProject, setEndProject] = useState(page ? projectPerPage * page : projectPerPage);
+    const currentPage = parseInt(page, 10) || 1; 
+
+    const [startProject, setStartProject] = useState((currentPage - 1) * projectPerPage);
+    const [endProject, setEndProject] = useState(currentPage * projectPerPage);
 
     useEffect(() => {
-        if(page === undefined || page === 1) {
-            setStartProject(0);
-            return
-        } 
-        const calcul = projectPerPage * (page - 1);
+        const calcul = projectPerPage * (currentPage - 1);
         setStartProject(calcul);
-
-    }, [page]);
+        setEndProject(calcul + projectPerPage);
+    }, [currentPage]);
 
     const handlePageChange = (newPage) => {
         setStartProject(projectPerPage * (newPage - 1));
         setEndProject(projectPerPage * newPage);
-    }
+        
+        window.scrollTo(0, 0);
+    };
 
-    return(
+    return (
         <>
             <Header />
-                <main className="container">
+            <main className="container">
                 <section className="section_projects">
                     <h2>Projets</h2>
                     <div className="div_projects">
-                        {projects_data.slice(startProject,endProject).map(project => (
+                        {projects_data.slice(startProject, endProject).map(project => (
                             <Project project={project} key={project.id} />
                         ))}
                     </div>
-                    </section>
-                    <div className="div_page_change">
-                        {Array.from({length: Math.ceil(projects_data.length / projectPerPage)}, (_, i) => (
-                            <Link className={`link ${page ? i : "page_used"}`}  to="#" onClick={() => handlePageChange(i + 1)}>{i + 1}</Link>
-                        ))}
-                    </div>
-                </main>
+                </section>
+                <div className="div_page_change">
+                {Array.from({ length: Math.ceil(projects_data.length / projectPerPage) }, (_, i) => (
+                    <NavLink
+                        key={i}
+                        className="link"
+                        to={`/Projects_Pages/${i + 1}`} 
+                    >
+                        {i + 1}
+                    </NavLink>
+                    ))}
+                </div>
+            </main>
             <Footer />
         </>
-    )
+    );
 }

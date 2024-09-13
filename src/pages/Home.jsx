@@ -55,7 +55,7 @@ export default function Home() {
                     <section className="section_projects">
                         <div className="div_title_projects">
                             <h2>Projets</h2>
-                            <Link className="link_articles_projects" to="#">Voir plus de projets</Link>
+                            <Link className="link_articles_projects" to="/Projects_Pages/1">Voir plus de projets</Link>
                         </div>
                         <div className="div_projects">
                             {projects_data.slice(0,3).map(project => (

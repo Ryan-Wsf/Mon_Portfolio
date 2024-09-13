@@ -3,77 +3,108 @@
       "id": 1,
       "title": "Projet John Doe",
       "description": "Conception d'un portfolio virtuel",
+      "fullDescription": "Conception d'un portfolio virtuel pour un developpeur fictif. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en JavaScript, PHP",
       "image": "/img/John_Doe_Capture.png",
+      "languageIcone": ["/img/html.png", "/img/css.png", "/img/js.png", "/img/php.png"],
       "link": "#"
     },
     {
       "id": 2,
       "title": "Projet GeniArtHub",
       "description": "Conception d'un site e-commerce",
+      "fullDescription": "Conception d'un site e-commerce pour une galerie d'art fictive. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en JavaScript avec l'utilisation des fetch , des API et du localStorage.",
       "image": "/img/GeniArtHub.png",
+      "languageIcone": ["/img/html.png", "/img/css.png", "/img/js.png"],
       "link": "#"
     },
     {
       "id": 3,
       "title": "Projet Oraculus",
       "description": "Conception d'un site d'horoscope",
+      "fullDescription": "Conception d'un site d'horoscope. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en JavaScript avec l'utilisation des fetch , des API et du localStorage.",
       "image": "/img/Oraculus.png",
+      "languageIcone": ["/img/html.png", "/img/css.png", "/img/js.png"],
       "link": "#"
     },
     {
       "id": 4,
       "title": "Projet Home Key",
       "description": "Intégration d'un site web",
+      "fullDescription": "Intégration d'un projet fictif. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en HTML et CSS.",
       "image": "/img/Home_Key.png",
+      "languageIcone": ["/img/html.png", "/img/css.png"],
       "link": "#"
     },
     {
       "id": 5,
       "title": "Projet Nomade",
       "description": "Intégration d'un site web",
+      "fullDescription": "Intégration d'un projet fictif. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en HTML et CSS.",
       "image": "/img/Nomade.png",
+      "languageIcone": ["/img/html.png", "/img/css.png"],
       "link": "#"
     },
     {
       "id": 6,
       "title": "Projet Digital",
       "description": "Intégration d'un site web",
+      "fullDescription": "Intégration d'un projet fictif. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en HTML et CSS.",
       "image": "/img/Digital.png",
+      "languageIcone": ["/img/html.png", "/img/css.png"],
       "link": "#"
     },
     {
       "id": 7,
       "title": "Projet Délices Sucrés",
       "description": "Intégration d'un site web",
+      "fullDescription": "Intégration d'un projet fictif. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en HTML et CSS.",
       "image": "/img/Delices_Sucre.png",
+      "languageIcone": ["/img/html.png", "/img/css.png"],
       "link": "#"
     },
     {
       "id": 8,
       "title": "Projet Olivia & Daniel",
       "description": "Intégration d'un site web",
+      "fullDescription": "Intégration d'un projet fictif. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en HTML et CSS.",
       "image": "/img/Olivia_Daniel.png",
+      "languageIcone": ["/img/html.png", "/img/css.png"],
       "link": "#"
     },
     {
       "id": 9,
       "title": "Projet Vividly",
       "description": "Intégration d'un site web",
+      "fullDescription": "Intégration d'un projet fictif. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en HTML et CSS.",
       "image": "/img/Vividly.png",
+      "languageIcone": ["/img/html.png", "/img/css.png"],
       "link": "#"
     },
     {
       "id": 10,
       "title": "Projet Writer",
       "description": "Intégration d'un site web",
+      "fullDescription": "Intégration d'un projet fictif. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en HTML et CSS.",
       "image": "/img/Writer.png",
+      "languageIcone": ["/img/html.png", "/img/css.png"],
       "link": "#"
     },
     {
       "id": 11,
       "title": "Projet Nomade Maquillage",
       "description": "Intégration d'un site web",
+      "fullDescription": "Intégration d'un projet fictif. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en HTML et CSS.",
       "image": "/img/Nomade_Maquillage.png",
+      "languageIcone": ["/img/html.png", "/img/css.png"],
+      "link": "#"
+    },
+    {
+      "id": 12,
+      "title": "Projet Morpion",
+      "description": "Conception du jeu du morpion",
+      "fullDescription": "Conception d'un jeu du morpion. Ce projet a été réalisé dans le cadre de ma formation de Développeur Web Junior chez La Plateforme. Le but de ce projet était d'améliorer mes compétences en JavaScript. Nous devions faire jouer l'utilisateur contre l'ordinateur et ensuite deux ordinateur.",
+      "image": "/img/Morpion.png",
+      "languageIcone": ["/img/html.png", "/img/css.png", "/img/js.png"],
       "link": "#"
     }
   ]
